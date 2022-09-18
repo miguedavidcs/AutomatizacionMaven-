@@ -26,7 +26,7 @@ public class Tests {
 		driver.manage().window().maximize();
 		driver.navigate().to("https://demoqa.com/text-box");
 		try {
-			Thread.sleep(10000);
+			Thread.sleep(3000);
 		}catch(InterruptedException e) {
 			e.printStackTrace();
 		}
@@ -39,7 +39,7 @@ public class Tests {
 		driver.findElement(By.id("permanentAddress")).sendKeys("Casita de Dios");
 		driver.findElement(By.id("submit")).click();
 		try {
-			Thread.sleep(10000);
+			Thread.sleep(1000);
 		}catch(InterruptedException e) {
 			e.printStackTrace();
 		}
