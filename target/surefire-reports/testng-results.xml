@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="tests.Tests" duration-ms="32652" started-at="2022-09-18T22:57:08Z" finished-at="2022-09-18T22:57:41Z">
+  <suite name="tests.Tests" duration-ms="18172" started-at="2022-09-18T23:49:10Z" finished-at="2022-09-18T23:49:29Z">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="32652" started-at="2022-09-18T22:57:08Z" finished-at="2022-09-18T22:57:41Z">
+    <test name="Command line test" duration-ms="18172" started-at="2022-09-18T23:49:10Z" finished-at="2022-09-18T23:49:29Z">
       <class name="tests.Tests">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:tests.Tests@5ebec15]" name="setUp" is-config="true" duration-ms="19507" started-at="2022-09-18T22:57:08Z" finished-at="2022-09-18T22:57:28Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:tests.Tests@5ebec15]" name="setUp" is-config="true" duration-ms="10927" started-at="2022-09-18T23:49:11Z" finished-at="2022-09-18T23:49:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="pruebaUno()[pri:0, instance:tests.Tests@5ebec15]" name="pruebaUno" duration-ms="10678" started-at="2022-09-18T22:57:28Z" finished-at="2022-09-18T22:57:38Z">
+        <test-method status="PASS" signature="pruebaUno()[pri:0, instance:tests.Tests@5ebec15]" name="pruebaUno" duration-ms="4795" started-at="2022-09-18T23:49:21Z" finished-at="2022-09-18T23:49:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pruebaUno -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.Tests@5ebec15]" name="tearDown" is-config="true" duration-ms="2436" started-at="2022-09-18T22:57:38Z" finished-at="2022-09-18T22:57:41Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.Tests@5ebec15]" name="tearDown" is-config="true" duration-ms="2417" started-at="2022-09-18T23:49:26Z" finished-at="2022-09-18T23:49:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

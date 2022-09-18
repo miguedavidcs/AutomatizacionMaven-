@@ -12,12 +12,15 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import helpers.helpers;
+
 /**
  * @author Usuario Miguel Castaño
  *
  */
 public class Tests {
 	private WebDriver driver;
+	helpers helper= new helpers();
 	@BeforeMethod
 	public void setUp() {
 		DesiredCapabilities caps = new DesiredCapabilities();
@@ -25,11 +28,7 @@ public class Tests {
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.navigate().to("https://demoqa.com/text-box");
-		try {
-			Thread.sleep(3000);
-		}catch(InterruptedException e) {
-			e.printStackTrace();
-		}
+		helper.sleepSeconds(5);
 	}
 	@Test
 	public void pruebaUno() {
@@ -38,11 +37,8 @@ public class Tests {
 		driver.findElement(By.id("currentAddress")).sendKeys("Donde el Diablo dejo el trinche");
 		driver.findElement(By.id("permanentAddress")).sendKeys("Casita de Dios");
 		driver.findElement(By.id("submit")).click();
-		try {
-			Thread.sleep(1000);
-		}catch(InterruptedException e) {
-			e.printStackTrace();
-		}
+		
+		helper.sleepSeconds(4);
 		Assert.assertTrue(driver.findElement(By.xpath("/html/body/div[2]/div/div/div[2]/div[2]/div[2]/form/div[6]/div")).getText().contains("Name:"));
 	}
 	@AfterMethod
